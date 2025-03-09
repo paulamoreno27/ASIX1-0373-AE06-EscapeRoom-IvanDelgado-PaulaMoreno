@@ -1,12 +1,3 @@
-<?php
-session_start();
-
-// Verificar si la sesión para el reto 1 no está iniciada
-if (!isset($_SESSION['reto2'])) {
-    header('Location: ../index.php'); // Redirige al index.php si no ha completado el reto anterior
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,6 +20,7 @@ if (!isset($_SESSION['reto2'])) {
         if (isset($_GET['msg'])) {
             echo "<p>Error, pista: El comando tiene " . $_GET['msg'] . " letras</p>";
         }
+        
         ?>
     </div>
 </body>
