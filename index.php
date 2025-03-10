@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a ASIX-DAW1 Quiz</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <div class="container">
+    <div id="containerinicio">
         <h1>¡Bienvenido al ESCAPE ROOM de ASIX-DAW1!</h1>
         <p>Pon a prueba tus conocimientos sobre redes, programación y bases de datos.</p>
-        <a href="./views/reto1.php" class="btn">Comenzar Juego</a>
+        <a href="./pruebaindx.php" class="comenzar-juego">Comenzar Juego</a>
     </div>
 
     <?php
