@@ -17,14 +17,16 @@
     <div id="containerinicio">
         <h1>¡Bienvenido al ESCAPE ROOM de ASIX-DAW1!</h1>
         <p class="subtitulos playwrite-hu">Pon a prueba tus conocimientos sobre redes, programación y bases de datos.</p>
-        <a href="./retos.php" class="comenzar-juego">Comenzar Juego</a>
+        <a href="./retos.php" class="comenzar-juego">Comenzar Juego</a><br><br>
+        <div id="mensaje-error">
+            <?php
+                if (isset($_GET['error'])){
+                    echo "<p>Te hemos pillado.. No se pueden hacer trampas, pillin...</p>";
+                }
+            ?>
+        </div>
     </div>
 
-    <?php
-        if (isset($_GET['error'])){
-            echo "<p>Te has pasado de listo, calisto </p>";
-        }
-    ?>
 
 </body>
 </html>

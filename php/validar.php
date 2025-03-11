@@ -15,7 +15,7 @@ if (isset($_POST['indice']) && strtolower($_POST['pregunta']) == 'ls'){
 } elseif(isset($_POST['reto2'])) {
     header('Location:../views/reto2.php?msg=se suele escribir al inicio del codigo y no lleva valores');
 
-}  elseif(isset($_POST['reto3']) && strtolower($_POST['pregunta'] == "SELECT * FROM emp;")) {
+}  elseif(isset($_POST['reto3']) && strtolower($_POST['pregunta']) == "select * from emp;") {
     session_start();
     $_SESSION['reto4'] = 'check';
     header('Location: ../retos.php');

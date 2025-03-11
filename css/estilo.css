@@ -249,7 +249,19 @@ h1 {
     transform: scale(1);
 }
 
+#diploma{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Playwrite HU", cursive;
+}
 
+#mensaje-error {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+}
 
 /* MEDIA QUERIES PARA RESPONSIVE */
 @media (max-width: 700px) {
