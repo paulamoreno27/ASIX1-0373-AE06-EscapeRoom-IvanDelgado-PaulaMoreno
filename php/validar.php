@@ -2,7 +2,7 @@
 if (isset($_POST['indice']) && strtolower($_POST['pregunta']) == 'ls'){
     session_start();
     $_SESSION['reto2'] = 'check';
-    header('Location: ../pruebaindx.php');
+    header('Location: ../retos.php');
 
 } elseif(isset($_POST['indice'])) {
     header('Location: ../views/reto1.php?msg=2');
@@ -10,18 +10,18 @@ if (isset($_POST['indice']) && strtolower($_POST['pregunta']) == 'ls'){
 } elseif(isset($_POST['reto2']) && strtolower($_POST['pregunta']) == 'session_start();') {
     session_start();
     $_SESSION['reto3'] = 'check';
-    header('Location: ../pruebaindx.php');
+    header('Location: ../retos.php');
     
 } elseif(isset($_POST['reto2'])) {
     header('Location:../views/reto2.php?msg=se suele escribir al inicio del codigo y no lleva valores');
 
-}  elseif(isset($_POST['reto3']) && strtolower($_POST['pregunta'] == "SELECT * FROM tbl_clientes;")) {
+}  elseif(isset($_POST['reto3']) && strtolower($_POST['pregunta'] == "SELECT * FROM emp;")) {
     session_start();
     $_SESSION['reto4'] = 'check';
-    header('Location: ../pruebaindx.php');
+    header('Location: ../retos.php');
     
 } elseif(isset($_POST['reto3'])) {
-    header("Location:../views/reto3.php?msg=comienza con 'SELECT' y obtiene toda la información de la tabla de clientes.");
+    header("Location:../views/reto3.php?msg=comienza con 'SELECT' y obtiene toda la información de la tabla emp.");
 
 }   elseif(isset($_POST['reto4']) && strtolower($_POST['pregunta']) == "80") {
     session_start();
