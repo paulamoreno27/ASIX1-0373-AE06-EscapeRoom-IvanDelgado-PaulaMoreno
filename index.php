@@ -14,9 +14,9 @@
     <link rel="shortcut icon" href="./img/casa.svg" type="image/x-icon">
 </head>
 <body>
-    <div id="containerinicio">
-        <h1>¡Bienvenido al ESCAPE ROOM de ASIX-DAW1!</h1>
-        <p class="subtitulos playwrite-hu">Pon a prueba tus conocimientos sobre redes, programación y bases de datos.</p>
+    <div class="final-container">
+        <h1  class="inicial-title">¡Bienvenido al ESCAPE ROOM de ASIX-DAW1!</h1>
+        <p  class="playwrite-hu">Pon a prueba tus conocimientos sobre redes, programación y bases de datos.</p>
         <a href="./retos.php" class="comenzar-juego">Comenzar Juego</a><br><br>
         <div id="mensaje-error">
             <?php
